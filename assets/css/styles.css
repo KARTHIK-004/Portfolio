@@ -646,45 +646,92 @@ img {
   justify-self: center;
 }
 
-/*==================== TESTIMONIAL ====================*/
-.testimonial__data,.testimonial__header{
-  display: flex;
+/*==================== PORTFOLIO ====================*/
+.portfolio__container{
+  overflow: initial;
 }
 
-.testimonial__data{
-  justify-content: space-between;
-  margin-bottom: var(--mb-1);
+.portfolio__content{
+  padding: 0 1.5rem;
 }
 
-.testimonial__img{
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  margin-right: var(--mb-0-75);
+.portfolio__img{
+  width: 265px;
+  border-radius: .5rem;
+  justify-self: center;
 }
 
-.testimonial__name{
+.portfolio__title{
   font-size: var(--h3-font-size);
-  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-0-5);
 }
 
-.testimonial__client{
-  font-size: var(--small-font-size);
-  color: var(--text-color-light);
+.portfolio__description{
+  margin-bottom: var(--mb-0-75);
 }
 
-.testimonial__description{
-  margin-bottom: var(--mb-2-5);
+.portfolio__button:hover .button__icon{
+  transform: translateX(.25rem);
 }
 
-.testimonial__icon-star{
+.swiper-button-prev::after,.swiper-button-next::after{
+  content: '';
+}
+
+.swiper-portfolio-icon{
+  font-size: 2rem;
   color: var(--first-color);
 }
 
-.swiper-container .swiper-pagination-testimonal{
-  bottom: 0;
+.swiper-button-prev{
+  left: -0.5rem;
 }
 
+.swiper-button-next{
+  right: -0.5rem;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets{
+  bottom: -2.5rem;
+}
+
+.swiper-pagination-bullet-active{
+  background-color: var(--first-color);
+}
+
+.swiper-button-prev,.swiper-button-next,.swiper-button-bullet{
+  outline: none;
+}
+
+
+
+/*==================== PROJECT IN MIND ====================*/
+.project{
+  text-align: center;
+}
+
+.project__bg{
+  background-color: var(--first-color);
+  padding-top: 3rem;
+}
+
+.project__title{
+  font-size: var(--h2-font-size);
+  margin-bottom: var(--mb-0-75);
+}
+
+.project__description{
+  margin-bottom: var(--mb-1-5);
+}
+
+.project__title,.project__description{
+  color: #fff;
+}
+
+.project__img{
+  width: 232px;
+  justify-self: center;
+}
 /*==================== CONTACT ME ====================*/
 .contact__container{
   row-gap: 3rem;
