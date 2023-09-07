@@ -18,7 +18,7 @@
     <body>
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
-            <nav class="nav container">
+            <nav class="nav__container container nav">
                 <a href="#" class="nav__logo">Karthik</a>
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list grid">
@@ -106,11 +106,11 @@
                         </div>
                         
                         <div class="home__data">
-                            <h1 class="home__title">Hi, I'am Karthik</h1>
+                            <h1 class="home__title">Hi, I'm Karthik</h1>
                             <h3 class="home__subtitle">Frontend developer</h3>
                             <p class="home__description">High level experience in web design and knowledge, 
                             producing quality work</p>
-                            <a href="contact" class="button button--flex">
+                            <a href="#contact" class="button button--flex">
                                 Contact Me
                                 <i class="uil uil-message button__icon"></i>
                             </a>
@@ -148,7 +148,7 @@
                         </div>
                     </div>
                         <div class="about__button">
-                            <a href="assets/pdf/Resume.pdf" class="button button--flex">
+                            <a href="assets/pdf/CV Resume.pdf" class="button button--flex">
                             Download CV<i class="uil uil-download-alt button__icon"></i>
                             </a>
                         </div>
@@ -217,10 +217,10 @@
                                         <span class="skills__percentage skills__react"></span>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                         <!--==================== SKILLS 2 ====================-->
+                        
                         <div class="skills__content skills__close">
                             <div class="skills__header">
                                 <i class="uil uil-database skills__icon"></i>
@@ -353,10 +353,27 @@
                         
                         <!--==================== QUALIFICATION CONTENT 2====================-->
                         <div class="qualification__content" data-content id="course">
+                            
                             <!--==================== QUALIFICATION 1====================-->
                             <div class="qualification__data">
+                                <div></div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
                                 <div>
                                     <h3 class="qualification__title">Frontend development</h3>
+                                    <span class="qualification__subtitle">Udemy</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2023-2023
+                                    </div>
+                                </div>
+                            </div>
+                            <!--==================== QUALIFICATION 2====================-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Backend development</h3>
                                     <span class="qualification__subtitle">Udemy</span>
                                     <div class="qualification__calendar">
                                         <i class="uil uil-calendar-alt"></i>
@@ -366,23 +383,7 @@
 
                                 <div>
                                     <span class="qualification__rounder"></span>
-                                    <span class="qualification__line"></span>
-                                </div>
-                            </div>
-                            <!--==================== QUALIFICATION 2====================-->
-                            <div class="qualification__data">
-                                <div></div>
-                                <div>
-                                    <span class="qualification__rounder"></span>
                                     <!-- <span class="qualification__line"></span> -->
-                                </div>
-                                <div>
-                                    <h3 class="qualification__title">Backend development</h3>
-                                    <span class="qualification__subtitle">Udemy</span>
-                                    <div class="qualification__calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2023-2023
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -439,10 +440,13 @@
                             <img src="assets/img/portfolio3.jpg" alt="" class="portfolio__img">
  
                             <div class="portfolio__data">
-                                 <h3 class="portfolio__title">Online Store</h3>
-                                 <p class="portfolio__description">Website adaptable to all devices, 
-                                     with ui components and animated interactions.</p>
-                                 <a href="#" class="button button--flex button--small portfolio__button">
+                                 <h3 class="portfolio__title">Portfolio</h3>
+                                 <p class="portfolio__description">A professionally designed portfolio website built with HTML,
+                                    CSS, and JavaScript is a digital representation of your talents and accomplishments.
+                                    It combines the structure and content organization of HTML, the styling and layout capabilities of CSS,
+                                    and the interactive features of JavaScript to create an engaging and user-friendly experience. 
+                                </p>
+                                 <a href="https://karthik-004.github.io/Portfolio/" class="button button--flex button--small portfolio__button">
                                      Demo
                                      <i class="uil uil-arrow-right button__icon"></i>
                                  </a>
@@ -477,12 +481,13 @@
                     </div>
                 </div>
             </section>
+
             <!--==================== CONTACT ME ====================-->
             <section class="contact section" id="contact">
                 <h2 class="section__title">Contact Me</h2>
                 <span class="section__subtitle">Get in touch</span>
 
-                <div class="contact__contaniner container grid">
+                <div class="contact__container container grid">
                     <div>
                         <div class="contact__information">
                             <i class="uil uil-phone contact__icon"></i>
@@ -510,22 +515,24 @@
                                 <span class="contact__subtitle">Chennai-TamilNadu</span>
                             </div>
                         </div>
+                    </div>
+                    <div>
                         <form action="" class="contact__form grid">
                             <div class="contact__inputs grid">
                                 <div class="contact__content">
-                                    <label for="" class="contact__label">Name :</label>
-                                    <input type="text" class="contact__input">
+                                    <label class="contact__label">Name </label>
+                                    <input type="text" class="contact__input" id="contact__name">
                                 </div>
 
                                 <div class="contact__content">
-                                    <label for="" class="contact__label">Email :</label>
-                                    <input type="email" class="contact__input">
+                                    <label class="contact__label">Email </label>
+                                    <input type="email" class="contact__input" id="contact__email">
                                 </div>
                             </div>
                             
                             <div class="contact__content">
-                                <label for="" class="contact__label">Message :</label>
-                                <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                                <label class="contact__label">Message </label>
+                                <textarea cols="0" rows="7" class="contact__input" id="contact__message"></textarea>
                             </div>
 
                             <div>
